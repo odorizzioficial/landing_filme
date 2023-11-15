@@ -1,0 +1,156 @@
+@use 'variaveis';
+@use 'header';
+@use 'button';
+@use 'slide';
+
+@font-face {
+  font-family: 'WesternBangBang';
+  src: url('../../assets/fonts/Evereast.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: variaveis.$font;
+
+  @media (max-width: 768px) {}
+}
+
+.pagina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+
+  .pagina__foto {
+    margin-bottom: -90px;
+
+    @media (max-width: 768px) {
+      
+      margin-left: 100%;
+      margin-top: 190px;
+    }
+
+    img {
+
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 50%;
+
+      @media (max-width: 768px) {
+
+        font-size: 30px;
+        margin-top: -60px;
+      }
+
+    }
+
+
+  }
+
+  .pagina__te__h {
+    margin-bottom: 0px;
+  }
+
+  .pagina__h {
+    font-size: 60px;
+    text-align: center;
+    padding: 5px;
+    text-shadow: 2px 2px 4px variaveis.$TextSombra;
+    color: variaveis.$Text;
+    margin-top: -110px;
+    margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+
+      font-size: 30px;
+      margin-top: -60px;
+    }
+
+  }
+
+  .pagina__p,
+  .pagina__descricao {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px variaveis.$TextSombra;
+    color: variaveis.$Text;
+
+    
+    @media (max-width: 768px) {
+      font-size: 20px;
+      text-align: center; 
+      padding: 30px
+    }
+  }
+
+  .pagina__descricao {
+    padding: 20px;
+    font-size: 25px;
+    margin-top: 10px;
+
+
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  .pag__img {
+    margin-top: 10px;
+  }
+
+  .pagina__link--imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+
+    img {
+      width: 10%;
+      max-width: 10%;
+      height: auto;
+
+
+    }
+  }
+
+  &__conteudo {
+    margin-bottom: 10px;
+
+
+  }
+}
+
+.rodape {
+  margin-top: 10px;
+
+  @media (max-width: 768px) {
+    width: 400px;
+    font-size: 0px;
+    
+    margin-top: -0px;
+  
+  }
+}
+
+.pagina__redes-sociais {
+  display: flex;
+  gap: 10px;
+}

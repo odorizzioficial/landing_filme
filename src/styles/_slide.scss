@@ -1,0 +1,21 @@
+@use 'variaveis';
+
+.slide {
+  color: variaveis.$Text; 
+  padding: 10px; 
+  position: relative;
+  color: variaveis.$Text; 
+  padding: 1cap;
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; 
+    background: url('../../src/images/fundo.png') center center/cover no-repeat;
+    filter: blur(5px); 
+}
+
+}
